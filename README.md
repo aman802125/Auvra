@@ -33,3 +33,23 @@ Default admin email is `admin@auvra.com`. Change `ADMIN_EMAIL` and `ADMIN_PASSWO
 - Production database backups and secrets
 
 The included checkout is COD only. Do not treat this starter as production-ready until authentication, secrets, validation, rate limiting, backups, HTTPS and payment verification are configured.
+</div>
+
+</section>
+
+<footer>
+  © 2026 Auvra. All Rights Reserved.
+</footer>
+
+<script>
+  let count = 0;
+
+  function addCart() {
+    count++;
+    document.getElementById("cartCount").innerText = count;
+    alert("Product added to cart!");
+  }
+</script>
+
+</body>
+</html>
