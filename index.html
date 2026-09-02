@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auvra - Online Shopping</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #fff;
+    }
+
+    .cart {
+      background: white;
+      color: #111;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+
+    .hero {
+      background: white;
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #666;
+    }
+
+    .products {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #ddd;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 8px;
+    }
+
+    button {
+      background: #111;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 20px;
+      background: #111;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>AU VRA</h1>
+    <div class="cart">🛒 Cart: <span id="cartCount">0</span></div>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Auvra</h2>
+    <p>Shop your favourite products online</p>
+  </section>
+
+  <section class="products">
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Product+1">
+      <h3>Premium T-Shirt</h3>
+      <div class="price">₹499</div>
+      <button onclick="addCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Product+2">
+      <h3>Stylish Shoes</h3>
+      <div class="price">₹999</div>
+      <button onclick="addCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Product+3">
+      <h3>Smart Watch</h3>
+      <div class="price">₹1,499</div>
+      <button onclick="addCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Product+4">
+      <h3>Headphones</h3>
+      <div class="price">₹799</div>
+      <
